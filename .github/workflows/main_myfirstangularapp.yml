@@ -50,6 +50,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'MyfirstAngularApp'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3C7DEABC993D4ED8A0A56C83274A9F89 }}
-          package: .
+          package: ./dist/myfirstangularapp
